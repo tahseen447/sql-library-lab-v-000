@@ -27,8 +27,8 @@ create table characters(
   name TEXT,
   motto TEXT,
   species TEXT,
-  author_id TEXT,
-  series_id TEXT
+  author_id INTEGER,
+  series_id INTEGER
 );
 
 create table character_books(
