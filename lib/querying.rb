@@ -16,7 +16,7 @@ def select_name_and_series_subgenres_of_authors
 end
 
 def select_series_title_with_most_human_characters
-  "select series_id from characters where species='human' order by count(species) desc limit 1"
+  "select series_id from characters group by species order by count(species) desc limit 1"
 end
 
 def select_character_names_and_number_of_books_they_are_in
